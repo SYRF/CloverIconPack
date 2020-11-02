@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<updates xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingDefaultResource">
+
+    <!-- 为了方便数据传输，也可以使用Json表达 -->
+    <!--
+    [
+        {
+            "name": "1.0",
+            "code": 5,
+            "item": [
+                "AAAA",
+                "BBBB"
+            ]
+        },
+        {
+            "name": "0.9",
+            "code": 4,
+            "item": [
+                "CCCC",
+                "DDDD"
+            ]
+        }
+    ]
+    -->
+
+    <!--  版本  -->
+    <version name="1.0" code="5">
+        <!--  更新内容，数量不限   -->
+        <item>三叶草图标包示例应用</item>
+        <item>基于L图标包模板核心组件开发</item>
+        <item>开发者QQ：2530767709</item>
+    </version>
+
+    <version name="0.2" code="3">
+        <item>增加文本内容配置</item>
+        <item>增加图标解析文件的配置</item>
+        <item>开发者QQ：1982568737</item>
+    </version>
+
+
+    <version name="0.1" code="1">
+        <item>基础项目搭建</item>
+        <item>完成项目架构设计</item>
+        <item>开发者QQ：1982568737</item>
+    </version>
+
+</updates>

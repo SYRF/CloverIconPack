@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.author.AuthorDialogFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_start"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="?dialogPreferredPadding" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_end"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="?dialogPreferredPadding" />
+
+    <TextView
+        android:id="@+id/author_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_normal"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:minHeight="@dimen/profile_dialog_header_height"
+        android:textSize="18sp"
+        android:text="Andrew"
+        android:textAppearance="@style/TextAppearance.IOSched.AccountDialog.Username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <org.bubbble.iconandkit.widget.CircleImageView
+        android:id="@+id/author_avatar"
+        android:layout_width="@dimen/profile_dialog_account_image_size"
+        android:layout_height="@dimen/profile_dialog_account_image_size"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/author_name"
+        app:layout_constraintEnd_toStartOf="@+id/author_name"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@drawable/list_divider"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/author_name" />
+
+    <TextView
+        android:id="@+id/author_message"
+        style="?materialAlertDialogBodyTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/margin_normal"
+        android:paddingBottom="@dimen/margin_normal"
+        app:layout_constraintEnd_toStartOf="@id/guideline_end"
+        app:layout_constraintStart_toEndOf="@id/guideline_start"
+        app:layout_constraintTop_toBottomOf="@id/divider1"
+        tools:style="@style/AlertDialog.BodyText"
+        tools:ignore="PrivateResource" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/close"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_normal"
+        android:text="@string/cool"
+        android:textAllCaps="true"
+        android:textColor="@color/color_primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/author_message" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

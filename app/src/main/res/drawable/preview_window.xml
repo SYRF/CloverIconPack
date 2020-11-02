@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@color/activity_background" />
+
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/preview_window_logo" >
+        </bitmap>
+    </item>
+
+    <item>
+        <!--图片-->
+        <bitmap
+            android:gravity="bottom|center_horizontal"
+            android:src="@drawable/l_tips_logo">
+        </bitmap>
+    </item>
+</layer-list>

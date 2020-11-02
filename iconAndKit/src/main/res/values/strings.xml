@@ -1,0 +1,44 @@
+<resources>
+
+    <string name="adapt">所有图标</string>
+    <string name="adapted">已适配</string>
+    <string name="request_icons">申请适配</string>
+
+    <string name="preview">概览</string>
+    <string name="icons">图标</string>
+    <string name="apply">应用</string>
+
+
+    <string name="app_name">图标包</string>
+
+    <string name="extraapp">com.momocode.shortcuts</string>
+
+    <string name="no_store">没有可用的应用商店</string>
+
+    <string name="gnl_title">不兼容谷歌即时桌面</string>
+
+    <string name="gnl_content">谷歌即时桌面与图标包是不可兼容的，但请不要因此给予这个图标包负面的评价。有一个解决方法你可以尝试，但这需要使用到一个外部应用，你想要下载它吗?
+    </string>
+
+    <string name="lg_dialog_content">非常抱歉，因为“LG HOME APP”是LG设备的专用应用，所以无法从谷歌应用商店上下载到它
+    </string>
+
+    <string name="no_launcher_intent">无法在桌面上自动生成应用图标，请在桌面设置中手动设置</string>
+    <!-- LauncherNotInstalled Dialog -->
+    <string name="lni_content">%1$s 你的设备当前没有安装，\n你想要从谷歌应用商店上安装它吗？
+    </string>
+    <string name="cm_dialog_content">%1$s 是CyanogenMod（based） Roms 的一部分，\n你想要将它下载到你的设备上吗？
+    </string>
+
+    <string name="download">下载</string>
+    <string name="cancel">取消</string>
+    <string name="close">关闭</string>
+    <string name="cool">酷</string>
+
+    <string name="adapter_not">未适配 0</string>
+    <string name="adapter_number">适配 0</string>
+    <string name="whats_update">版本日志</string>
+    <string name="open_link_error">无法打开应用</string>
+    <string name="title_choose_email">请选择邮件类应用</string>
+    <string name="email_request_subject">适配申请</string>
+</resources>

@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.preview.PreviewFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        style="@style/Widget.IOSched.AppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        app:elevation="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <ImageView
+                android:id="@+id/info_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:layout_marginEnd="@dimen/margin_normal"
+                android:layout_marginStart="@dimen/margin_normal"
+                android:background="@drawable/radius_selectable"
+                android:src="@drawable/ic_assistant"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.IOSched.ToolbarTitle"
+                android:text="@string/app_name"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+
+            <org.bubbble.iconandkit.widget.CircleImageView
+                android:id="@+id/author_icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="@dimen/margin_normal"
+                android:layout_marginStart="@dimen/margin_normal"
+                android:src="@drawable/ic_default_profile_avatar"
+                android:background="@drawable/radius_selectable"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:animateLayoutChanges="true">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/refresh"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_marginStart="@dimen/margin_normal"
+                android:layout_marginEnd="@dimen/margin_normal"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:layout_marginBottom="@dimen/margin_normal"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:cardMaxElevation="0dp">
+
+                <ImageView
+                    android:id="@+id/head_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    tools:ignore="ContentDescription" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/icon_root"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="26dp"
+                        android:layout_marginEnd="26dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <com.lollipop.iconcore.ui.IconImageView
+                            android:id="@+id/icon1"
+                            android:layout_width="0dp"
+                            android:layout_height="56dp"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:scaleType="fitCenter"
+                            android:visibility="invisible" />
+
+                        <com.lollipop.iconcore.ui.IconImageView
+                            android:id="@+id/icon2"
+                            android:layout_width="0dp"
+                            android:layout_height="56dp"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:scaleType="fitCenter"
+                            android:visibility="invisible" />
+
+                        <com.lollipop.iconcore.ui.IconImageView
+                            android:id="@+id/icon3"
+                            android:layout_width="0dp"
+                            android:layout_height="56dp"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:scaleType="fitCenter"
+                            android:visibility="invisible" />
+
+                        <com.lollipop.iconcore.ui.IconImageView
+                            android:id="@+id/icon4"
+                            android:layout_width="0dp"
+                            android:layout_height="56dp"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:scaleType="fitCenter"
+                            android:visibility="invisible" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/margin_large"
+                android:paddingEnd="@dimen/margin_large"
+                android:paddingTop="@dimen/margin_small"
+                android:paddingBottom="@dimen/margin_small">
+
+                <TextView
+                    android:id="@+id/adapt_rate"
+                    style="@style/Widget.IOSched.Feed.Session.Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="设备适配"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:layout_marginBottom="@dimen/margin_normal">
+
+                <ProgressBar
+                    android:id="@+id/progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center"
+                    android:progressDrawable="@drawable/progressbar_round"
+                    android:progressTint="@color/color_primary"
+                    android:max="100"
+                    style="@android:style/Widget.ProgressBar.Horizontal"/>
+
+                <TextView
+                    android:id="@+id/adaptation_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:textColor="@color/white"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:text="0"/>
+
+                <TextView
+                    android:id="@+id/app_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:text="0"
+                    android:textColor="#666666"/>
+
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/margin_large"
+                android:paddingEnd="@dimen/margin_large"
+                android:paddingTop="@dimen/margin_small"
+                android:paddingBottom="@dimen/margin_small"
+                android:focusable="true"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    style="@style/Widget.IOSched.Feed.Session.Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/forward"
+                    android:text="全部图标"/>
+
+                <ImageView
+                    android:id="@+id/forward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_forward"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    app:tint="?attr/colorControlNormal"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:layout_marginBottom="@dimen/margin_normal"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/icons_page"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/twotone_corners_button"
+                    android:foreground="@drawable/radius_selectable"
+                    tools:ignore="UnusedAttribute">
+
+                    <ImageView
+                        android:id="@+id/icons_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:padding="14dp"
+                        android:src="@drawable/ic_dashboard"
+                        app:tint="@color/color_primary" />
+
+                    <TextView
+                        android:id="@+id/icon_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/color_primary"
+                        android:text="@string/icons"/>
+
+                    <TextView
+                        android:id="@+id/icon_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:textSize="14sp"
+                        android:layout_marginEnd="26dp"
+                        android:textColor="@color/color_primary"
+                        android:text="0"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/new_dialog"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/corners_button"
+                    android:foreground="@drawable/radius_selectable"
+                    tools:ignore="UnusedAttribute">
+
+                    <ImageView
+                        android:id="@+id/new_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:padding="14dp"
+                        android:src="@drawable/ic_florist"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/new_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/white"
+                        android:text="@string/adapted"/>
+
+                    <TextView
+                        android:id="@+id/new_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:textSize="14sp"
+                        android:layout_marginEnd="26dp"
+                        android:textColor="@color/white"
+                        android:text="0"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/store_links"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/margin_large"
+                android:paddingEnd="@dimen/margin_large"
+                android:paddingTop="@dimen/margin_small"
+                android:paddingBottom="@dimen/margin_small"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/Widget.IOSched.Feed.Session.Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="更多应用"/>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/appLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginBottom="@dimen/margin_normal"
+                android:orientation="vertical"
+                android:animateLayoutChanges="true"
+                android:visibility="gone">
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/other_links"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/margin_large"
+                android:paddingEnd="@dimen/margin_large"
+                android:paddingTop="@dimen/margin_small"
+                android:paddingBottom="@dimen/margin_small"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/Widget.IOSched.Feed.Session.Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="友情链接"/>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/linksLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginBottom="@dimen/margin_normal"
+                android:orientation="vertical"
+                android:animateLayoutChanges="true"
+                android:visibility="gone">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

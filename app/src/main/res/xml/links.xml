@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<links>
+
+    <!-- 更多应用 -->
+    <link
+        title="And图标包模板"
+        summary="这是另一个完全不一样图标包模板示例应用。"
+        icon="and_iconpack"
+        url="app_store"
+        attr1="org.andcreator.iconpack"/>
+
+    <link
+        title="L图标包模板"
+        summary="这是Lcon图标包, IconCore的官方示例应用。"
+        icon="l_iconpack"
+        url="app_store"
+        attr1="com.lollipop.smarticonpack"/>
+
+    <!-- 友情链接 -->
+    <link
+        title="为图标包评分吧"
+        summary="如果喜欢这个图标包,请给个 ★★★★★"
+        icon="ic_launcher_round"
+        url="store"/>
+
+    <link
+        title="项目开源地址"
+        summary="访问项目源代码，以及如何使用开源图标包模板的说明文档"
+        icon="github"
+        url="https://github.com/Mr-XiaoLiang/SmartIconPack"/>
+
+    <link
+        title="开发者的个人网站"
+        summary="q(≧▽≦q)q(≧▽≦q)"
+        icon="author_icon"
+        url="https://bubbble.org"/>
+
+    <!--  这是打开第三方应用的示例  -->
+<!--    <link-->
+<!--        title="打开应用设置"-->
+<!--        summary="打开当前应用的设置界面"-->
+<!--        icon="ic_launcher_round"-->
+<!--        url="action(android.settings.APPLICATION_DETAILS_SETTINGS)">-->
+<!--        <arg type="data">package:org.bubbble.iconandkit</arg>-->
+<!--    </link>-->
+
+<!--    <link  -->
+<!--        title="某个应用"  -->
+<!--        summary="某个应用界面的示例"  -->
+<!--        icon="ic_launcher_round"  -->
+<!--        url="ComponentInfo{com.google.android.apps.messaging/com.google.android.apps.messaging.ui.ConversationListActivity}">  -->
+<!--        <arg name="argName1">arg value</arg>  -->
+<!--        <arg name="argName2">arg value</arg>  -->
+<!--    </link>  -->
+
+</links>

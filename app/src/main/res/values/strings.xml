@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">三叶草图标包模板</string>
+
+    <string name="maker_name">Andrew Martin</string>
+    <string name="maker_sign">你好😉！我一名设计摄影爱好者，也是本图标包UI界面的创作者，希望有更多人喜欢这个作品！</string>
+    <string-array name="maker_motto">
+    </string-array>
+    <string name="maker_email">hujincan15369@Gmail.com</string>
+
+</resources>

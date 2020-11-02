@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/preview"
+        android:icon="@drawable/ic_nav_events"
+        android:title="@string/preview"
+        app:contentDescription="preview" />
+
+    <item
+        android:id="@+id/icons"
+        android:icon="@drawable/ic_nav_category"
+        android:title="@string/icons"
+        app:contentDescription="icons" />
+
+    <item
+        android:id="@+id/apply"
+        android:icon="@drawable/ic_nav_style"
+        android:title="@string/apply"
+        app:contentDescription="apply" />
+</menu>

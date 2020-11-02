@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="8dp"
+    android:paddingStart="20dp"
+    android:paddingEnd="26dp">
+
+    <TextView
+        android:id="@+id/adaptation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/color_primary"
+        android:padding="10dp"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:text="@string/adapter_number"
+        app:drawableStartCompat="@drawable/ic_insert_emoticon" />
+
+    <TextView
+        android:id="@+id/notAdaptation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/adaptation"
+        android:padding="10dp"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:text="@string/adapter_not"
+        app:drawableStartCompat="@drawable/ic_mood_bad" />
+
+    <ImageButton
+        android:id="@+id/selectAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_select_all"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:tint="#666666"/>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mask_view"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/phone_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:src="@drawable/phone_background2"
+        android:alpha="0"
+        android:visibility="invisible"/>
+
+    <com.lollipop.iconcore.ui.IconImageView
+        android:id="@+id/preview_icon"
+        android:layout_width="142dp"
+        android:layout_height="142dp"
+        android:layout_marginBottom="196dp"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center|bottom"/>
+
+    <TextView
+        android:id="@+id/preview_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:maxLength="24"
+        android:textSize="24sp"
+        android:padding="16dp"
+        android:layout_marginBottom="126dp"
+        android:text="Icon"
+        android:alpha="0"
+        android:visibility="invisible"/>
+
+</FrameLayout>

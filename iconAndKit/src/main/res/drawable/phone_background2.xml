@@ -1,0 +1,8 @@
+<vector android:height="474.0531dp" android:viewportHeight="1488"
+    android:viewportWidth="1130" android:width="360dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/phoneButton" android:pathData="M1102,371L1112,371A18,18 0,0 1,1130 389L1130,519A18,18 0,0 1,1112 537L1102,537A18,18 0,0 1,1084 519L1084,389A18,18 0,0 1,1102 371z"/>
+    <path android:fillColor="@color/phoneButton" android:pathData="M1102,596L1112,596A18,18 0,0 1,1130 614L1130,865A18,18 0,0 1,1112 883L1102,883A18,18 0,0 1,1084 865L1084,614A18,18 0,0 1,1102 596z"/>
+    <path android:fillColor="@color/phoneScreen" android:pathData="M160,0H948a160,160 0,0 1,160 160V1488a0,0 0,0 1,0 0H0a0,0 0,0 1,0 0V160A160,160 0,0 1,160 0Z"/>
+    <path android:fillColor="@color/phoneNotch" android:pathData="M308,98L801,98A19,19 0,0 1,820 117L820,117A19,19 0,0 1,801 136L308,136A19,19 0,0 1,289 117L289,117A19,19 0,0 1,308 98z"/>
+    <path android:fillColor="@color/phoneNotch" android:pathData="M198,117m-19,0a19,19 0,1 1,38 0a19,19 0,1 1,-38 0"/>
+</vector>
