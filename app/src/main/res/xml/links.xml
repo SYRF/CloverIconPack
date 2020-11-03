@@ -24,7 +24,13 @@
         url="store"/>
 
     <link
-        title="项目开源地址"
+        title="三叶草模板开源地址"
+        summary="访问三叶草图标包模板的项目源代码"
+        icon="ic_launcher_round"
+        url="https://github.com/hujincan/CloverIconPack"/>
+
+    <link
+        title="IconCore开源地址"
         summary="访问项目源代码，以及如何使用开源图标包模板的说明文档"
         icon="github"
         url="https://github.com/Mr-XiaoLiang/SmartIconPack"/>

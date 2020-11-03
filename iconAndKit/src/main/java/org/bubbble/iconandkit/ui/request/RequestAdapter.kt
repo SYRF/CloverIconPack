@@ -71,7 +71,7 @@ internal class RequestAdapter(private var listener: (Int) -> Unit) : ListAdapter
         if (currentList.isEmpty()) {
             return false
         }
-        val real = position - HEADER_EMPTY
+        val real = position
         val app = currentList[real]
         if (selectedApp.remove(app)) {
             listener(selectedApp.size)
@@ -100,7 +100,7 @@ internal class RequestAdapter(private var listener: (Int) -> Unit) : ListAdapter
         if (currentList.isEmpty()) {
             return false
         }
-        val app = currentList[position - HEADER_EMPTY]
+        val app = currentList[position]
         return selectedApp.contains(app)
     }
 
